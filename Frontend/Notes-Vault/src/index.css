@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Base styles */
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+  }
+
+  body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    overflow-x: hidden;
+    color: #222;
+    transition: background 0.3s;
+  }
+}
+
+/* Component styles */
+@layer components {
+  /* Primary button */
+  .btn-primary {
+  background: linear-gradient(90deg, #3A8DFF 0%, #2BB5FF 100%);
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.12);
+  transition: all 0.3s;
+  backdrop-filter: blur(4px);
+  border: none;
+  }
+
+  .btn-primary:hover {
+  background: linear-gradient(90deg, #2BB5FF 0%, #3A8DFF 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.12);
+  }
+
+  /* Input box */
+  .input-box {
+  width: 100%;
+  font-size: 1rem;
+  background: #fff;
+  border-radius: 1rem;
+  outline: none;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  border: 1.5px solid #e0eafc;
+  padding: 0.75rem 1.25rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  .input-box:focus {
+    border-color: #2BB5FF;
+    box-shadow: 0 0 0 2px #2BB5FF33;
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem;
+    transition: box-shadow 0.2s;
+  }
+  .glass-card:hover {
+    box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.18);
+  }
+
+  /* Text and background colors */
+  .text-primary {
+    color: #2BB5FF;
+  }
+
+  .bg-primary {
+    background-color: #2BB5FF;
+  }
+
+  .text-secondary {
+    color: #FF7E5F;
+  }
+
+  .bg-secondary {
+    background-color: #FF7E5F;
+  }
+
+  .text-accent {
+    color: #3A8DFF;
+  }
+
+  .bg-accent {
+    background-color: #3A8DFF;
+  }
+}
